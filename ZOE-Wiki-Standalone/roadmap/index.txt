@@ -1,0 +1,183 @@
+1:"$Sreact.fragment"
+2:I[91432,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"AuthProvider"]
+3:I[5766,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"Toaster"]
+4:I[87771,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"default"]
+5:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"default"]
+6:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"default"]
+7:I[19486,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js","/_next/static/chunks/055e55db791d3c1c.js","/_next/static/chunks/5de42d6e3e0a52ba.js"],"default"]
+d:I[68027,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"default"]
+:HL["/_next/static/chunks/aff996518a85446c.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.6435ea53.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+8:T1202,
+# ZOE Roadmap 2025-2027
+
+## 🎯 Q1 2025 - Foundation Phase
+**Timeline:** January - March 2025  
+**Status:** 🟡 In Progress
+
+### Technology
+- **MVP Development** (Jan-Feb)
+  - ✅ User authentication system
+  - 🔄 Basic data processing pipeline
+  - 🔄 Initial UI/UX implementation
+  - ⏳ API development
+
+### Market Research
+- **Customer Discovery** (Jan-Feb)
+  - Interview 50 potential customers
+  - Analyze competitor landscape
+  - Define target market segments
+  - Pricing strategy research
+
+### Team Building
+- **Core Team Recruitment** (Feb-Mar)
+  - Senior Backend Engineer
+  - ML/AI Specialist
+  - DevOps Engineer
+  - Head of Sales
+  - Marketing Manager
+
+---
+
+## 🚀 Q2 2025 - Growth Phase
+**Timeline:** April - June 2025  
+**Status:** ⏳ Planned
+
+### Product Launch
+- **Beta Testing Program** (April)
+  - Recruit 20 beta testers
+  - Implement feedback system
+  - Weekly iteration cycles
+  - Performance monitoring
+
+- **Public Release v1.0** (May)
+  - Marketing campaign launch
+  - Press release and media outreach
+  - Launch event planning
+  - Customer onboarding automation
+
+### Funding
+- **Seed Round - $2M** (May-June)
+  - Pitch deck preparation
+  - Investor meetings
+  - Due diligence process
+  - Term sheet negotiation
+
+---
+
+## 📈 Q3-Q4 2025 - Scale Phase
+**Timeline:** July - December 2025  
+**Status:** ⏳ Planned
+
+### Technology Expansion
+- **Advanced Features** (Jul-Sep)
+  - AI-powered analytics
+  - Third-party integrations
+  - Mobile application
+  - Enterprise features
+
+### Market Expansion
+- **Customer Acquisition** (Jul-Dec)
+  - Target: 500 paying customers
+  - Content marketing strategy
+  - Partnership development
+  - Sales team scaling
+  - Customer success program
+
+### Series A Preparation
+- **Next Funding Round** (Oct-Dec)
+  - Financial modeling
+  - Growth metrics tracking
+  - Advisory board formation
+  - Strategic planning
+
+---
+
+## 🌍 2026 - Expansion Year
+**Timeline:** January - December 2026  
+**Status:** ⏳ Planned
+
+### Geographic Expansion
+- **Q1-Q2: International Markets**
+  - European market entry
+  - APAC market research
+  - Localization and compliance
+  - Regional partnerships
+  - Local team building
+
+### Platform Ecosystem
+- **Q2-Q3: Developer Marketplace**
+  - Third-party app store
+  - Developer SDK and APIs
+  - Partner certification program
+  - Revenue sharing model
+
+### Enterprise Strategy
+- **Q3-Q4: Enterprise Customers**
+  - Enterprise security features
+  - SOC2 and ISO certifications
+  - Dedicated support team
+  - Custom deployment options
+
+---
+
+## 👑 2027 - Market Leadership
+**Timeline:** January - December 2027  
+**Status:** ⏳ Planned
+
+### Strategic Growth
+- **Q1-Q2: Acquisitions**
+  - Identify acquisition targets
+  - Due diligence and valuation
+  - Integration planning
+  - Synergy realization
+
+### IPO Preparation
+- **Q3-Q4: Public Offering**
+  - Financial audit and compliance
+  - Board composition
+  - Investment banking selection
+  - S-1 filing preparation
+
+---
+
+## Key Milestones Timeline
+
+```
+2025 Q1: MVP Complete ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2025 Q2: Product Launch     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2025 Q2: Seed Funding ($2M)      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2025 Q3: 100 Customers                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2025 Q4: 500 Customers                       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026 Q1: International Launch                       ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026 Q2: Series A ($10M)                                 ━━━━━━━━━━━━━━━━━━━━━
+2026 Q3: Developer Platform                                      ━━━━━━━━━━━━━━━
+2026 Q4: Enterprise Ready                                               ━━━━━━━━━
+2027 Q1: Market Leader                                                       ━━━━
+2027 Q4: IPO Ready                                                               ━
+```
+
+## Status Legend
+- ✅ Completed
+- 🔄 In Progress
+- ⏳ Planned
+- 🔴 At Risk
+- 🟡 On Track
+- 🟢 Ahead of Schedule
+0:{"P":null,"b":"_LihvOcLzFpa3x4yqZpl1","p":"","c":["","roadmap",""],"i":false,"f":[[["",{"children":["roadmap",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/aff996518a85446c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/00473fbed1d5dc6a.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1c50e377e4e737d3.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable antialiased","children":["$","$L2",null,{"children":[["$","$L3",null,{"position":"top-right"}],["$","div",null,{"className":"flex min-h-screen bg-gray-50","children":[["$","$L4",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]}]}]]}],{"children":["roadmap",["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen bg-gradient-to-br from-amber-50 to-orange-50 p-8","children":["$","div",null,{"className":"max-w-4xl mx-auto","children":["$","$L7",null,{"content":"$8"}]}]}],["$L9","$La"],"$Lb"]}],{},null,false]},null,false]},null,false],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"s":false,"S":true}
+f:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"OutletBoundary"]
+11:I[11533,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"AsyncMetadataOutlet"]
+13:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"MetadataBoundary"]
+16:"$Sreact.suspense"
+9:["$","script","script-0",{"src":"/_next/static/chunks/055e55db791d3c1c.js","async":true,"nonce":"$undefined"}]
+a:["$","script","script-1",{"src":"/_next/static/chunks/5de42d6e3e0a52ba.js","async":true,"nonce":"$undefined"}]
+b:["$","$Lf",null,{"children":["$L10",["$","$L11",null,{"promise":"$@12"}]]}]
+c:["$","$1","h",{"children":[null,[["$","$L13",null,{"children":"$L14"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L15",null,{"children":["$","div",null,{"hidden":true,"children":["$","$16",null,{"fallback":null,"children":"$L17"}]}]}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/aff996518a85446c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+10:null
+18:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"IconMark"]
+12:{"metadata":[["$","title","0",{"children":"ZOE Wiki - Internal Knowledge Base"}],["$","meta","1",{"name":"description","content":"Company roadmap, values, and strategic vision"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L18","3",{}]],"error":null,"digest":"$undefined"}
+17:"$12:metadata"

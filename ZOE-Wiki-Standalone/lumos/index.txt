@@ -1,0 +1,143 @@
+1:"$Sreact.fragment"
+2:I[91432,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"AuthProvider"]
+3:I[5766,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"Toaster"]
+4:I[87771,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"default"]
+5:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"default"]
+6:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"default"]
+7:I[16330,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js","/_next/static/chunks/b73f7259a79640d0.js","/_next/static/chunks/5de42d6e3e0a52ba.js"],"default"]
+d:I[68027,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"default"]
+:HL["/_next/static/chunks/aff996518a85446c.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.6435ea53.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+8:T1186,# Lumos - Embodied AI Assistant
+
+## 🤖 Vision
+
+Lumos is Zoe's physical embodiment - a therapeutic companion and home assistant that brings our sleep optimization platform into the physical world.
+
+## Core Capabilities
+
+### 🏠 Environment Optimization
+- **Light Control**: Manages circadian-appropriate lighting throughout the day
+- **Temperature Regulation**: Interfaces with smart thermostats for optimal sleep temperature
+- **Sound Management**: White noise, nature sounds, or complete silence based on preferences
+- **Air Quality**: Monitors and adjusts humidity, CO2 levels, and air circulation
+
+### 💬 Therapeutic Companion
+- **Voice Interaction**: Natural conversation about sleep concerns and daily wellness
+- **CBT-I Guidance**: Delivers cognitive behavioral therapy for insomnia protocols
+- **Relaxation Techniques**: Guides through breathing exercises, meditation, progressive muscle relaxation
+- **Wake-Up Assistance**: Gentle, personalized wake routines aligned with sleep cycles
+
+### 📊 Data Collection
+- **Environmental Sensing**: Continuous monitoring of bedroom conditions
+- **Movement Detection**: Non-invasive sleep tracking through motion sensors
+- **Voice Analysis**: Detect stress, fatigue, or mood changes through voice patterns
+- **Integration Hub**: Connects all smart home devices into unified sleep ecosystem
+
+## Design Philosophy
+
+### Physical Form
+- **Non-threatening**: Soft, organic shapes rather than traditional robot appearance
+- **Ambient Presence**: Blends into bedroom environment, not intrusive
+- **Adaptive Lighting**: Built-in light ring for circadian signaling
+- **Minimal Footprint**: Compact design suitable for nightstand placement
+
+### Interaction Design
+- **Privacy-First**: All processing done locally when possible
+- **Consent-Based**: Always asks permission before interventions
+- **Personality**: Warm, caring, knowledgeable but not overbearing
+- **Multimodal**: Voice, light, gentle sounds, optional touch interface
+
+## Technical Architecture
+
+### Hardware Stack
+- **Processor**: Edge AI chip for local processing
+- **Sensors**: Array including light, sound, temperature, humidity, air quality
+- **Actuators**: Motorized base for subtle movements, LED array
+- **Connectivity**: WiFi, Bluetooth, Zigbee for smart home integration
+- **Audio**: High-quality speaker and microphone array with beamforming
+
+### Software Integration
+- **Zoe Platform**: Seamless integration with Sleep 360 Dashboard
+- **Local AI Models**: On-device processing for privacy
+- **Cloud Sync**: Optional encrypted backup and advanced processing
+- **OTA Updates**: Regular improvements to capabilities
+
+## Development Timeline
+
+### Phase 1: Concept & Prototype (2026)
+- Industrial design concepts
+- User research and testing
+- Technical feasibility studies
+- Partner identification (hardware manufacturers)
+
+### Phase 2: Alpha Development (2027)
+- First functional prototypes
+- Limited pilot program (10-20 units)
+- Feedback integration
+- Regulatory approval process
+
+### Phase 3: Beta Launch (2028)
+- Production-ready design
+- Manufacturing partnership
+- Beta program (100-500 units)
+- Premium tier exclusive access
+
+### Phase 4: Market Release (2028+)
+- Full production scale
+- Global availability
+- Consumer and clinical versions
+- Continuous feature updates
+
+## Market Positioning
+
+### Target Segments
+1. **Premium Consumers**: Early adopters in Zoe's concierge tier
+2. **Sleep Clinics**: Professional version for clinical settings
+3. **Elderly Care**: Specialized features for aging population
+4. **Hotels**: Luxury hospitality partnerships
+
+### Pricing Strategy
+- **Consumer Version**: $2,000-3,000 one-time + Zoe subscription
+- **Clinical Version**: $5,000-8,000 with professional features
+- **Subscription Enhancement**: Additional $20-50/month for Lumos features
+
+## Differentiators
+
+### vs. Smart Speakers (Alexa, Google Home)
+- Purpose-built for sleep and wellness
+- Physical presence and environmental control
+- Medical-grade insights and interventions
+- Privacy-focused design
+
+### vs. Sleep Robots (Somnox, etc.)
+- Full ecosystem integration
+- AI-powered personalization
+- Environmental control capabilities
+- Continuous learning and adaptation
+
+## Future Vision
+
+Lumos represents the future of ambient computing for health:
+- Invisible yet present when needed
+- Proactive yet respectful of boundaries
+- Scientific yet approachable
+- Powerful yet private
+
+By 2030, Lumos aims to be the trusted sleep guardian in millions of bedrooms worldwide.0:{"P":null,"b":"_LihvOcLzFpa3x4yqZpl1","p":"","c":["","lumos",""],"i":false,"f":[[["",{"children":["lumos",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/aff996518a85446c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/00473fbed1d5dc6a.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1c50e377e4e737d3.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable antialiased","children":["$","$L2",null,{"children":[["$","$L3",null,{"position":"top-right"}],["$","div",null,{"className":"flex min-h-screen bg-gray-50","children":[["$","$L4",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]}]}]]}],{"children":["lumos",["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen p-8","children":["$","div",null,{"className":"max-w-4xl mx-auto","children":[["$","div",null,{"className":"mb-8","children":["$","div",null,{"className":"flex items-center gap-3 mb-4","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-bot w-8 h-8 text-amber-500","aria-hidden":"true","children":[["$","path","hb8ula",{"d":"M12 8V4H8"}],["$","rect","enze0r",{"width":"16","height":"12","x":"4","y":"8","rx":"2"}],["$","path","vft8re",{"d":"M2 14h2"}],["$","path","4cs60a",{"d":"M20 14h2"}],["$","path","1xurst",{"d":"M15 13v2"}],["$","path","rq6x2g",{"d":"M9 13v2"}],"$undefined"]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-800","children":"Lumos Robot"}]]}]}],["$","div",null,{"className":"bg-white rounded-xl shadow-lg p-8","children":["$","$L7",null,{"content":"$8","contentKey":"lumos","title":"Lumos - Embodied AI"}]}]]}]}],["$L9","$La"],"$Lb"]}],{},null,false]},null,false]},null,false],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"s":false,"S":true}
+f:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"OutletBoundary"]
+11:I[11533,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"AsyncMetadataOutlet"]
+13:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"MetadataBoundary"]
+16:"$Sreact.suspense"
+9:["$","script","script-0",{"src":"/_next/static/chunks/b73f7259a79640d0.js","async":true,"nonce":"$undefined"}]
+a:["$","script","script-1",{"src":"/_next/static/chunks/5de42d6e3e0a52ba.js","async":true,"nonce":"$undefined"}]
+b:["$","$Lf",null,{"children":["$L10",["$","$L11",null,{"promise":"$@12"}]]}]
+c:["$","$1","h",{"children":[null,[["$","$L13",null,{"children":"$L14"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L15",null,{"children":["$","div",null,{"hidden":true,"children":["$","$16",null,{"fallback":null,"children":"$L17"}]}]}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/aff996518a85446c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+10:null
+18:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"IconMark"]
+12:{"metadata":[["$","title","0",{"children":"ZOE Wiki - Internal Knowledge Base"}],["$","meta","1",{"name":"description","content":"Company roadmap, values, and strategic vision"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L18","3",{}]],"error":null,"digest":"$undefined"}
+17:"$12:metadata"

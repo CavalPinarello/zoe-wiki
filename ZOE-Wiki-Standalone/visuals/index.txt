@@ -1,0 +1,174 @@
+1:"$Sreact.fragment"
+2:I[91432,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"AuthProvider"]
+3:I[5766,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"Toaster"]
+4:I[87771,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"default"]
+5:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"default"]
+6:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"default"]
+7:I[16330,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js","/_next/static/chunks/b73f7259a79640d0.js","/_next/static/chunks/5de42d6e3e0a52ba.js"],"default"]
+d:I[68027,["/_next/static/chunks/00473fbed1d5dc6a.js","/_next/static/chunks/1c50e377e4e737d3.js"],"default"]
+:HL["/_next/static/chunks/aff996518a85446c.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.6435ea53.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+8:T13b6,# Visual Design System
+
+## 🎨 Brand Identity
+
+### Color Palette
+
+#### Primary Colors
+- **Sunset Orange**: #F97316 - Energy, vitality, awakening
+- **Warm Amber**: #FBBf24 - Comfort, rest, restoration  
+- **Golden Yellow**: #FDE047 - Light, circadian rhythm, morning
+
+#### Secondary Colors
+- **Deep Black**: #000000 - Night, depth, premium feel
+- **Pure White**: #FFFFFF - Clarity, cleanliness, medical precision
+- **Neutral Grays**: #6B7280 - Balance, professionalism
+
+### Typography
+
+#### Headlines
+- **Font**: Inter or SF Pro Display
+- **Weight**: Bold (700) for primary, Semibold (600) for secondary
+- **Style**: Clean, modern, approachable yet professional
+
+#### Body Text
+- **Font**: Inter or System UI
+- **Weight**: Regular (400) for body, Medium (500) for emphasis
+- **Line Height**: 1.6 for optimal readability
+
+## 🖼️ Visual Elements
+
+### Logo Concepts
+- **Primary Mark**: Abstract representation of sleep cycles with sun/moon duality
+- **Wordmark**: Clean, modern typography with subtle gradient
+- **Icon**: Simplified version for app and favicon use
+
+### Iconography Style
+- **Style**: Outlined, minimal, consistent stroke width
+- **Metaphors**: Natural elements (sun, moon, stars), human comfort, technology harmony
+- **Usage**: Functional clarity over decoration
+
+### Imagery Direction
+- **Photography**: Warm, human, authentic - real people in restful environments
+- **Illustrations**: Soft, organic shapes with gradient overlays
+- **Data Visualizations**: Clean, informative, with subtle animations
+
+## 📱 Interface Patterns
+
+### Dashboard Design
+- **Layout**: Card-based with clear hierarchy
+- **Metrics**: Large, readable numbers with contextual colors
+- **Graphs**: Smooth curves representing sleep patterns
+- **Interactions**: Subtle hover states, smooth transitions
+
+### Mobile Experience
+- **Navigation**: Bottom tab bar for thumb-friendly access
+- **Gestures**: Swipe between time periods, pull to refresh
+- **Notifications**: Gentle, non-intrusive, time-appropriate
+
+### Animation Principles
+- **Timing**: Smooth, natural easing (ease-in-out)
+- **Duration**: 200-400ms for micro-interactions
+- **Purpose**: Guide attention, provide feedback, create delight
+
+## 🌅 Environmental Design
+
+### Light Themes
+- **Morning**: Warm oranges and yellows, high contrast
+- **Day**: Balanced neutrals, optimal readability
+- **Evening**: Softer ambers, reduced blue light
+
+### Dark Mode
+- **Background**: True black (#000) for OLED efficiency
+- **Accents**: Muted oranges and ambers
+- **Text**: High contrast white with careful hierarchy
+
+## 📊 Data Visualization
+
+### Sleep Graphs
+- **Timeline**: Horizontal flow matching natural time progression
+- **Stages**: Color-coded layers (Deep, REM, Light, Awake)
+- **Annotations**: Contextual insights at key moments
+
+### Progress Indicators
+- **Rings**: Circular progress for daily goals
+- **Streaks**: Fire-inspired imagery for consistency
+- **Trends**: Smooth area charts with gradient fills
+
+### Comparative Views
+- **Before/After**: Split screen comparisons
+- **Peer Benchmarks**: Anonymous, respectful comparisons
+- **Historical**: Zoomable timeline with multiple granularities
+
+## 🎭 Emotional Design
+
+### Personality Traits
+- **Warm**: Never cold or clinical
+- **Encouraging**: Positive reinforcement over criticism
+- **Scientific**: Data-backed but human-friendly
+- **Trustworthy**: Consistent, reliable, transparent
+
+### Micro-Delights
+- **Success Moments**: Celebratory but not childish animations
+- **Progress Milestones**: Subtle confetti or glow effects
+- **Easter Eggs**: Hidden features for engaged users
+
+## 🏗️ Component Library
+
+### Buttons
+- **Primary**: Orange gradient with white text
+- **Secondary**: White with orange border
+- **Ghost**: Transparent with hover state
+- **Disabled**: Reduced opacity, no interaction
+
+### Cards
+- **Elevation**: Subtle shadows for depth
+- **Borders**: Light gray in light mode, dark gray in dark mode
+- **Padding**: Consistent spacing system (8px base unit)
+
+### Forms
+- **Inputs**: Rounded corners, clear focus states
+- **Labels**: Above fields, clear hierarchy
+- **Validation**: Inline, friendly error messages
+
+## 🖥️ Platform-Specific
+
+### Web Application
+- **Responsive**: Mobile-first, scaling to desktop
+- **Performance**: Lazy loading, optimized images
+- **Accessibility**: WCAG 2.1 AA compliant
+
+### Native Mobile
+- **iOS**: Follow Human Interface Guidelines with Zoe personality
+- **Android**: Material Design 3 with brand customization
+- **Wearables**: Glanceable, minimal, essential information
+
+## 🚀 Future Explorations
+
+### AR/VR Interfaces
+- **Sleep Environment**: Virtual bedroom optimization
+- **Meditation Spaces**: Immersive relaxation experiences
+- **Data Exploration**: 3D sleep pattern visualization
+
+### Ambient Computing
+- **Smart Home**: Seamless integration visuals
+- **Lumos Robot**: Physical design language
+- **Environmental Displays**: E-ink dashboards, smart mirrors
+
+This visual system creates a cohesive, recognizable, and emotionally resonant experience across all Zoe touchpoints.0:{"P":null,"b":"_LihvOcLzFpa3x4yqZpl1","p":"","c":["","visuals",""],"i":false,"f":[[["",{"children":["visuals",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/aff996518a85446c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/00473fbed1d5dc6a.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1c50e377e4e737d3.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable antialiased","children":["$","$L2",null,{"children":[["$","$L3",null,{"position":"top-right"}],["$","div",null,{"className":"flex min-h-screen bg-gray-50","children":[["$","$L4",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]}]}]]}],{"children":["visuals",["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen p-8","children":["$","div",null,{"className":"max-w-4xl mx-auto","children":[["$","div",null,{"className":"mb-8","children":["$","div",null,{"className":"flex items-center gap-3 mb-4","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-palette w-8 h-8 text-amber-500","aria-hidden":"true","children":[["$","path","e79jfc",{"d":"M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"}],["$","circle","1okk4w",{"cx":"13.5","cy":"6.5","r":".5","fill":"currentColor"}],["$","circle","f64h9f",{"cx":"17.5","cy":"10.5","r":".5","fill":"currentColor"}],["$","circle","qy21gx",{"cx":"6.5","cy":"12.5","r":".5","fill":"currentColor"}],["$","circle","fotxhn",{"cx":"8.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-800","children":"Visual Design"}]]}]}],["$","div",null,{"className":"bg-white rounded-xl shadow-lg p-8","children":["$","$L7",null,{"content":"$8","contentKey":"visuals","title":"Visual Design System"}]}]]}]}],["$L9","$La"],"$Lb"]}],{},null,false]},null,false]},null,false],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"s":false,"S":true}
+f:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"OutletBoundary"]
+11:I[11533,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"AsyncMetadataOutlet"]
+13:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"MetadataBoundary"]
+16:"$Sreact.suspense"
+9:["$","script","script-0",{"src":"/_next/static/chunks/b73f7259a79640d0.js","async":true,"nonce":"$undefined"}]
+a:["$","script","script-1",{"src":"/_next/static/chunks/5de42d6e3e0a52ba.js","async":true,"nonce":"$undefined"}]
+b:["$","$Lf",null,{"children":["$L10",["$","$L11",null,{"promise":"$@12"}]]}]
+c:["$","$1","h",{"children":[null,[["$","$L13",null,{"children":"$L14"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L15",null,{"children":["$","div",null,{"hidden":true,"children":["$","$16",null,{"fallback":null,"children":"$L17"}]}]}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/aff996518a85446c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+10:null
+18:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/ce64ab88b69414cc.js"],"IconMark"]
+12:{"metadata":[["$","title","0",{"children":"ZOE Wiki - Internal Knowledge Base"}],["$","meta","1",{"name":"description","content":"Company roadmap, values, and strategic vision"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L18","3",{}]],"error":null,"digest":"$undefined"}
+17:"$12:metadata"

@@ -1,0 +1,47 @@
+========================================
+       ZOE WIKI - INTERNAL KNOWLEDGE BASE
+========================================
+
+This is a self-contained version of the ZOE Wiki that works without any server or internet connection.
+
+HOW TO USE:
+-----------
+1. Simply double-click on "index.html" to open the wiki in your browser
+   OR
+   Right-click "index.html" → Open With → Your preferred browser (Chrome, Safari, Firefox, etc.)
+
+2. Navigate through the wiki using the sidebar menu on the left
+
+AVAILABLE SECTIONS:
+-------------------
+• Home - Overview and quick navigation
+• Roadmap - Interactive timeline from MVP to global sleep OS
+• Business Model - Tiered pricing strategy
+• Values - Company values and principles
+• Strengths - Stanford heritage and competitive advantages
+• Architecture - Technical system design
+• Documents - Document management
+• One Sentence - Mission statement
+• And more...
+
+COMPATIBILITY:
+--------------
+✓ Works on any computer (Mac, Windows, Linux)
+✓ Works with any modern browser
+✓ No installation required
+✓ No internet connection needed
+✓ Fully portable - can be copied to USB drives, shared via email, etc.
+
+SHARING:
+--------
+To share with others, simply send this entire folder or create a ZIP file of it.
+All recipients need to do is extract and open index.html.
+
+TECHNICAL INFO:
+---------------
+This is a static HTML export of a Next.js application.
+All functionality is preserved except features requiring a server (like real-time updates).
+
+========================================
+Built with ❤️ for ZOE's internal team
+========================================
