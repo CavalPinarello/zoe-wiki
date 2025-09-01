@@ -1,114 +1,301 @@
 'use client';
 
-import { useState } from 'react';
-import ArrowTimeline from '@/components/ArrowTimeline';
-import CalendarView from '@/components/CalendarView';
-import HorizontalTimeline from '@/components/HorizontalTimeline';
-import { detailedTimeline } from '@/lib/detailed-timeline';
-import { threeMonthTimeline, sixMonthTimeline, threeYearTimeline } from '@/lib/timeline-data';
-import { Rocket, Calendar, Target, LayoutGrid, ArrowRight } from 'lucide-react';
+import React from 'react';
+import InteractiveRoadmap from '@/components/InteractiveRoadmap';
 
 export default function RoadmapPage() {
-  const [view, setView] = useState<'arrow' | 'calendar' | 'timelines'>('arrow');
+  // Sample initial data with nested hierarchy
+  const initialRoadmapData = [
+    {
+      id: 'node-1',
+      title: 'Q1 2025 - Foundation Phase',
+      description: 'Build core platform infrastructure and initial market validation',
+      startDate: '2025-01-01',
+      endDate: '2025-03-31',
+      status: 'in-progress' as const,
+      category: 'Technology',
+      children: [
+        {
+          id: 'node-1-1',
+          title: 'MVP Development',
+          description: 'Core platform features and architecture',
+          startDate: '2025-01-01',
+          endDate: '2025-02-15',
+          status: 'in-progress' as const,
+          category: 'Technology',
+          details: [
+            'User authentication system',
+            'Basic data processing pipeline',
+            'Initial UI/UX implementation',
+            'API development'
+          ]
+        },
+        {
+          id: 'node-1-2',
+          title: 'Market Research',
+          description: 'Customer discovery and competitive analysis',
+          startDate: '2025-01-15',
+          endDate: '2025-02-28',
+          status: 'in-progress' as const,
+          category: 'Market',
+          details: [
+            'Interview 50 potential customers',
+            'Analyze competitor landscape',
+            'Define target market segments',
+            'Pricing strategy research'
+          ]
+        },
+        {
+          id: 'node-1-3',
+          title: 'Team Building',
+          description: 'Recruit core team members',
+          startDate: '2025-02-01',
+          endDate: '2025-03-31',
+          status: 'planned' as const,
+          category: 'Team',
+          children: [
+            {
+              id: 'node-1-3-1',
+              title: 'Engineering Hires',
+              description: 'Technical team expansion',
+              startDate: '2025-02-01',
+              endDate: '2025-03-15',
+              status: 'planned' as const,
+              category: 'Team',
+              details: [
+                'Senior Backend Engineer',
+                'ML/AI Specialist',
+                'DevOps Engineer'
+              ]
+            },
+            {
+              id: 'node-1-3-2',
+              title: 'Business Hires',
+              description: 'Business team expansion',
+              startDate: '2025-02-15',
+              endDate: '2025-03-31',
+              status: 'planned' as const,
+              category: 'Team',
+              details: [
+                'Head of Sales',
+                'Marketing Manager',
+                'Customer Success Lead'
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'node-2',
+      title: 'Q2 2025 - Growth Phase',
+      description: 'Product launch and initial customer acquisition',
+      startDate: '2025-04-01',
+      endDate: '2025-06-30',
+      status: 'planned' as const,
+      category: 'Product',
+      children: [
+        {
+          id: 'node-2-1',
+          title: 'Beta Testing Program',
+          description: 'Controlled release to early adopters',
+          startDate: '2025-04-01',
+          endDate: '2025-04-30',
+          status: 'planned' as const,
+          category: 'Product',
+          details: [
+            'Recruit 20 beta testers',
+            'Implement feedback system',
+            'Weekly iteration cycles',
+            'Performance monitoring'
+          ]
+        },
+        {
+          id: 'node-2-2',
+          title: 'Product Launch',
+          description: 'Public release v1.0',
+          startDate: '2025-05-01',
+          endDate: '2025-05-15',
+          status: 'planned' as const,
+          category: 'Product',
+          details: [
+            'Marketing campaign launch',
+            'Press release and media outreach',
+            'Launch event planning',
+            'Customer onboarding automation'
+          ]
+        },
+        {
+          id: 'node-2-3',
+          title: 'Seed Funding Round',
+          description: 'Raise $2M seed funding',
+          startDate: '2025-05-01',
+          endDate: '2025-06-30',
+          status: 'planned' as const,
+          category: 'Finance',
+          details: [
+            'Pitch deck preparation',
+            'Investor meetings',
+            'Due diligence process',
+            'Term sheet negotiation'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'node-3',
+      title: 'Q3-Q4 2025 - Scale Phase',
+      description: 'Scaling operations and market expansion',
+      startDate: '2025-07-01',
+      endDate: '2025-12-31',
+      status: 'planned' as const,
+      category: 'Market',
+      children: [
+        {
+          id: 'node-3-1',
+          title: 'Feature Expansion',
+          description: 'Advanced platform capabilities',
+          startDate: '2025-07-01',
+          endDate: '2025-09-30',
+          status: 'planned' as const,
+          category: 'Technology',
+          details: [
+            'AI-powered analytics',
+            'Third-party integrations',
+            'Mobile application',
+            'Enterprise features'
+          ]
+        },
+        {
+          id: 'node-3-2',
+          title: 'Customer Acquisition',
+          description: 'Reach 500 paying customers',
+          startDate: '2025-07-01',
+          endDate: '2025-12-31',
+          status: 'planned' as const,
+          category: 'Market',
+          details: [
+            'Content marketing strategy',
+            'Partnership development',
+            'Sales team scaling',
+            'Customer success program'
+          ]
+        },
+        {
+          id: 'node-3-3',
+          title: 'Series A Preparation',
+          description: 'Prepare for next funding round',
+          startDate: '2025-10-01',
+          endDate: '2025-12-31',
+          status: 'planned' as const,
+          category: 'Finance',
+          details: [
+            'Financial modeling',
+            'Growth metrics tracking',
+            'Advisory board formation',
+            'Strategic planning'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'node-4',
+      title: '2026 - Expansion Year',
+      description: 'Geographic expansion and platform ecosystem',
+      startDate: '2026-01-01',
+      endDate: '2026-12-31',
+      status: 'planned' as const,
+      category: 'Market',
+      children: [
+        {
+          id: 'node-4-1',
+          title: 'International Expansion',
+          description: 'Enter European and APAC markets',
+          startDate: '2026-01-01',
+          endDate: '2026-06-30',
+          status: 'planned' as const,
+          category: 'Market',
+          details: [
+            'Market research and localization',
+            'Regional partnerships',
+            'Compliance and regulations',
+            'Local team building'
+          ]
+        },
+        {
+          id: 'node-4-2',
+          title: 'Platform Ecosystem',
+          description: 'Build developer marketplace',
+          startDate: '2026-03-01',
+          endDate: '2026-09-30',
+          status: 'planned' as const,
+          category: 'Technology',
+          details: [
+            'Third-party app store',
+            'Developer SDK and APIs',
+            'Partner certification program',
+            'Revenue sharing model'
+          ]
+        },
+        {
+          id: 'node-4-3',
+          title: 'Enterprise Strategy',
+          description: 'Target enterprise customers',
+          startDate: '2026-06-01',
+          endDate: '2026-12-31',
+          status: 'planned' as const,
+          category: 'Product',
+          details: [
+            'Enterprise security features',
+            'Compliance certifications (SOC2, ISO)',
+            'Dedicated support team',
+            'Custom deployment options'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'node-5',
+      title: '2027 - Market Leadership',
+      description: 'Establish market leadership position',
+      startDate: '2027-01-01',
+      endDate: '2027-12-31',
+      status: 'planned' as const,
+      category: 'Market',
+      children: [
+        {
+          id: 'node-5-1',
+          title: 'Strategic Acquisitions',
+          description: 'Acquire complementary companies',
+          startDate: '2027-01-01',
+          endDate: '2027-06-30',
+          status: 'planned' as const,
+          category: 'Finance',
+          details: [
+            'Identify acquisition targets',
+            'Due diligence and valuation',
+            'Integration planning',
+            'Synergy realization'
+          ]
+        },
+        {
+          id: 'node-5-2',
+          title: 'IPO Preparation',
+          description: 'Prepare for public offering',
+          startDate: '2027-06-01',
+          endDate: '2027-12-31',
+          status: 'planned' as const,
+          category: 'Finance',
+          details: [
+            'Financial audit and compliance',
+            'Board composition',
+            'Investment banking selection',
+            'S-1 filing preparation'
+          ]
+        }
+      ]
+    }
+  ];
 
-  return (
-    <div className="min-h-screen p-8 bg-gray-50">
-      {/* Header */}
-      <div className="max-w-7xl mx-auto mb-8">
-        <div className="flex items-center gap-3 mb-4">
-          <Rocket className="w-8 h-8 text-orange-500" />
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-            Product Roadmap
-          </h1>
-        </div>
-        <p className="text-gray-600 text-lg mb-6">
-          Navigate through our strategic timeline - click on dots to explore details
-        </p>
-        
-        {/* View Switcher */}
-        <div className="flex gap-2">
-          <button
-            onClick={() => setView('arrow')}
-            className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 ${
-              view === 'arrow' 
-                ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white' 
-                : 'bg-white text-gray-700 hover:bg-gray-100'
-            }`}
-          >
-            <ArrowRight className="w-4 h-4" />
-            Detailed Timeline
-          </button>
-          <button
-            onClick={() => setView('calendar')}
-            className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 ${
-              view === 'calendar' 
-                ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white' 
-                : 'bg-white text-gray-700 hover:bg-gray-100'
-            }`}
-          >
-            <Calendar className="w-4 h-4" />
-            Calendar View
-          </button>
-          <button
-            onClick={() => setView('timelines')}
-            className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 ${
-              view === 'timelines' 
-                ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white' 
-                : 'bg-white text-gray-700 hover:bg-gray-100'
-            }`}
-          >
-            <LayoutGrid className="w-4 h-4" />
-            Time Horizons
-          </button>
-        </div>
-      </div>
-
-      {/* Views */}
-      {view === 'arrow' && (
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">Detailed Event Timeline</h2>
-          <p className="text-gray-600 mb-8">Starting with September 4 hackathon with Yoichiro, Christoph, Martin & Baher</p>
-          <ArrowTimeline events={detailedTimeline} />
-        </div>
-      )}
-
-      {view === 'calendar' && (
-        <CalendarView events={detailedTimeline} />
-      )}
-
-      {view === 'timelines' && (
-        <>
-          {/* 3-Month Timeline */}
-          <div className="mb-8 bg-white rounded-2xl shadow-lg p-8">
-            <div className="flex items-center gap-2 mb-6">
-              <Calendar className="w-6 h-6 text-orange-500" />
-              <h2 className="text-2xl font-bold text-gray-800">Next 3 Months</h2>
-              <span className="text-sm text-gray-500 ml-2">Detailed sprint planning</span>
-            </div>
-            <HorizontalTimeline items={threeMonthTimeline} title="" />
-          </div>
-
-          {/* 6-Month Timeline */}
-          <div className="mb-8 bg-white rounded-2xl shadow-lg p-8">
-            <div className="flex items-center gap-2 mb-6">
-              <Target className="w-6 h-6 text-amber-500" />
-              <h2 className="text-2xl font-bold text-gray-800">6-Month Horizon</h2>
-              <span className="text-sm text-gray-500 ml-2">Major milestones to Basel</span>
-            </div>
-            <HorizontalTimeline items={sixMonthTimeline} title="" />
-          </div>
-
-          {/* 3-Year Vision */}
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <div className="flex items-center gap-2 mb-6">
-              <Rocket className="w-6 h-6 text-yellow-500" />
-              <h2 className="text-2xl font-bold text-gray-800">3-Year Vision</h2>
-              <span className="text-sm text-gray-500 ml-2">Strategic growth trajectory</span>
-            </div>
-            <HorizontalTimeline items={threeYearTimeline} title="" />
-          </div>
-        </>
-      )}
-    </div>
-  );
+  return <InteractiveRoadmap initialData={initialRoadmapData} />;
 }

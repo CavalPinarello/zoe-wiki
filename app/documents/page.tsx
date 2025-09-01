@@ -67,29 +67,52 @@ const initialDocuments: Document[] = [
 ];
 
 export default function DocumentsPage() {
-  const [documents, setDocuments] = useState<Document[]>(initialDocuments);
+  const [documents, setDocuments] = useState<Document[]>(() => {
+    // Load documents from localStorage on init
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('zoe-documents');
+      if (saved) {
+        try {
+          return JSON.parse(saved);
+        } catch (e) {
+          console.error('Failed to load saved documents');
+        }
+      }
+    }
+    return initialDocuments;
+  });
   const [isDragging, setIsDragging] = useState(false);
   const { isAuthenticated } = useAuth();
 
-  const handleFileUpload = (files: FileList | null) => {
+  const handleFileUpload = async (files: FileList | null) => {
     if (!files || !isAuthenticated) return;
 
-    Array.from(files).forEach(file => {
+    for (const file of Array.from(files)) {
       if (file.type === 'application/pdf') {
-        const newDoc: Document = {
-          id: Date.now().toString(),
-          name: file.name,
-          description: 'Newly uploaded document',
-          url: URL.createObjectURL(file),
-          size: `${Math.round(file.size / 1024)} KB`,
-          uploadedAt: new Date().toISOString().split('T')[0]
+        // Create a data URL for the PDF
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const newDoc: Document = {
+            id: Date.now().toString() + Math.random().toString(36).substr(2, 9),
+            name: file.name,
+            description: 'Newly uploaded document',
+            url: e.target?.result as string, // Store as data URL
+            size: `${Math.round(file.size / 1024)} KB`,
+            uploadedAt: new Date().toISOString().split('T')[0]
+          };
+          setDocuments(prev => {
+            const updated = [...prev, newDoc];
+            // Save to localStorage
+            localStorage.setItem('zoe-documents', JSON.stringify(updated));
+            return updated;
+          });
+          toast.success(`Uploaded ${file.name}`);
         };
-        setDocuments(prev => [...prev, newDoc]);
-        toast.success(`Uploaded ${file.name}`);
+        reader.readAsDataURL(file);
       } else {
         toast.error(`${file.name} is not a PDF file`);
       }
-    });
+    }
   };
 
   const handleDragOver = (e: React.DragEvent) => {
@@ -109,14 +132,37 @@ export default function DocumentsPage() {
 
   const handleDelete = (id: string) => {
     if (window.confirm('Are you sure you want to delete this document?')) {
-      setDocuments(prev => prev.filter(doc => doc.id !== id));
+      setDocuments(prev => {
+        const updated = prev.filter(doc => doc.id !== id);
+        // Update localStorage
+        localStorage.setItem('zoe-documents', JSON.stringify(updated));
+        return updated;
+      });
       toast.success('Document deleted');
     }
   };
 
   const handleDownload = (doc: Document) => {
-    // In a real app, this would download the actual file
-    toast.success(`Downloading ${doc.name}`);
+    try {
+      // Create a download link
+      const link = document.createElement('a');
+      link.href = doc.url;
+      link.download = doc.name;
+      
+      // For data URLs or blob URLs, this will work directly
+      if (doc.url.startsWith('data:') || doc.url.startsWith('blob:')) {
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        toast.success(`Downloaded ${doc.name}`);
+      } else {
+        // For file paths, we need to fetch and create a blob
+        // Note: This won't work for local file paths in browser
+        toast.error('Cannot download local file paths from browser. Please use uploaded files.');
+      }
+    } catch (error) {
+      toast.error(`Failed to download ${doc.name}`);
+    }
   };
 
   return (
