@@ -1,0 +1,7 @@
+# Ignore standalone build files
+ZOE-Wiki-Standalone/
+ZOE-Wiki-Standalone.zip
+out/
+.git/
+README.md
+DEPLOYMENT.md
