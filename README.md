@@ -115,3 +115,10 @@ This project is proprietary and confidential.
 ---
 
 Built with ❤️ for ZOE's internal team
+
+---
+
+## Password Protection
+
+This wiki is password-protected when deployed on Vercel.
+Default password: Contact your administrator for access.
