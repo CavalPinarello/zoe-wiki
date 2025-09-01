@@ -3,6 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #f97316; /* orange-500 */
+  --primary-dark: #ea580c; /* orange-600 */
+  --accent: #fbbf24; /* amber-400 */
+  --accent-dark: #f59e0b; /* amber-500 */
+  --sunset: #fb923c; /* orange-400 */
 }
 
 @theme inline {
