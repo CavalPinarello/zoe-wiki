@@ -16,7 +16,9 @@ import {
   DollarSign,
   Bot,
   Palette,
-  FolderOpen
+  FolderOpen,
+  Users,
+  Calendar
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAuth } from '@/lib/auth-context';
@@ -26,6 +28,8 @@ const menuItems = [
   { name: 'Home', href: '/', icon: Home },
   { name: 'Roadmap', href: '/roadmap', icon: Map },
   { name: 'Business Model', href: '/business-model', icon: DollarSign },
+  { name: 'Customer Segments', href: '/customer-segments', icon: Users },
+  { name: 'Hackathon', href: '/hackathon', icon: Calendar },
   { name: 'Values', href: '/values', icon: Heart },
   { name: 'Strengths', href: '/strengths', icon: Sparkles },
   { name: 'Architecture', href: '/architecture', icon: Cpu },
