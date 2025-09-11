@@ -2,13 +2,28 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Rocket, Heart, Sparkles, FileText, Users, TrendingUp, Cpu, Moon } from 'lucide-react';
+import { ArrowRight, Rocket, Heart, Sparkles, FileText, Users, TrendingUp, Cpu, Calendar } from 'lucide-react';
 
 export default function Home() {
   const cards = [
     {
+      title: 'Hackathon Sept 12 & 15',
+      description: 'Virtual sprint: iOS app, modular dashboard, AI coach',
+      icon: Calendar,
+      href: '/hackathon',
+      color: 'from-purple-600 to-pink-600',
+      highlight: true
+    },
+    {
+      title: 'Customer Segments',
+      description: 'Four key segments from longevity seekers to sleep sufferers',
+      icon: Users,
+      href: '/customer-segments',
+      color: 'from-blue-500 to-purple-500'
+    },
+    {
       title: 'Roadmap',
-      description: 'From Half Moon Bay MVP to global sleep OS by 2028',
+      description: 'From MVP to global sleep OS by 2028',
       icon: Rocket,
       href: '/roadmap',
       color: 'from-orange-500 to-amber-500'
@@ -86,8 +101,15 @@ export default function Home() {
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all cursor-pointer group"
+                    className={`relative bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all cursor-pointer group ${
+                      card.highlight ? 'ring-2 ring-purple-500 ring-offset-2' : ''
+                    }`}
                   >
+                    {card.highlight && (
+                      <div className="absolute -top-3 -right-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse">
+                        NEW
+                      </div>
+                    )}
                     <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${card.color} flex items-center justify-center mb-4`}>
                       <Icon className="w-8 h-8 text-white" />
                     </div>

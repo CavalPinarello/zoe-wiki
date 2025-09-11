@@ -10,6 +10,7 @@ import {
   Target, 
   Clock, 
   CheckCircle2, 
+  Circle,
   Edit2,
   Save,
   X,
@@ -29,6 +30,7 @@ interface HackathonObjective {
   priority: 'high' | 'medium' | 'low';
   status: 'not-started' | 'in-progress' | 'completed';
   assignee?: string;
+  comments?: string;
 }
 
 const initialObjectives: HackathonObjective[] = [
@@ -131,6 +133,23 @@ export default function HackathonPage() {
     toast.success('Objective deleted');
   };
 
+  const handleToggleComplete = (id: string) => {
+    if (!isAuthenticated) {
+      toast.error('Please sign in to update status');
+      return;
+    }
+    const updatedObjectives = objectives.map(o => {
+      if (o.id === id) {
+        const newStatus: 'not-started' | 'completed' = o.status === 'completed' ? 'not-started' : 'completed';
+        return { ...o, status: newStatus };
+      }
+      return o;
+    });
+    setObjectives(updatedObjectives);
+    localStorage.setItem('hackathon-objectives', JSON.stringify(updatedObjectives));
+    toast.success('Status updated');
+  };
+
   const handleAddObjective = () => {
     if (!isAuthenticated) {
       toast.error('Please sign in to add objectives');
@@ -182,7 +201,7 @@ export default function HackathonPage() {
             </span>
           </h1>
           <p className="text-xl text-gray-600">
-            September 12-15 • Half Moon Bay, California
+            September 12 & 15 • Virtual Event • Strategic break for deeper thinking
           </p>
         </motion.div>
 
@@ -195,16 +214,16 @@ export default function HackathonPage() {
         >
           <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl p-6 shadow-lg">
             <Calendar className="w-8 h-8 mb-3" />
-            <h3 className="font-semibold mb-1">Duration</h3>
-            <p className="text-2xl font-bold">4 Days</p>
-            <p className="text-sm opacity-90">Sept 12-15</p>
+            <h3 className="font-semibold mb-1">Format</h3>
+            <p className="text-2xl font-bold">2 Days</p>
+            <p className="text-sm opacity-90">Sept 12 & 15</p>
           </div>
 
           <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-xl p-6 shadow-lg">
             <MapPin className="w-8 h-8 mb-3" />
             <h3 className="font-semibold mb-1">Location</h3>
-            <p className="text-2xl font-bold">Half Moon Bay</p>
-            <p className="text-sm opacity-90">California</p>
+            <p className="text-2xl font-bold">Virtual</p>
+            <p className="text-sm opacity-90">Remote Collaboration</p>
           </div>
 
           <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl p-6 shadow-lg">
@@ -267,7 +286,9 @@ export default function HackathonPage() {
                             className="flex-1 text-xl font-semibold px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
                           />
                         ) : (
-                          <h3 className="text-xl font-semibold text-gray-800">{objective.title}</h3>
+                          <h3 className={`text-xl font-semibold text-gray-800 ${objective.status === 'completed' ? 'line-through opacity-60' : ''}`}>
+                            {objective.title}
+                          </h3>
                         )}
                         {isEditing ? (
                           <select
@@ -296,40 +317,66 @@ export default function HackathonPage() {
                           rows={3}
                         />
                       ) : (
-                        <p className="text-gray-600">{objective.description}</p>
+                        <p className={`text-gray-600 ${objective.status === 'completed' ? 'line-through opacity-60' : ''}`}>
+                          {objective.description}
+                        </p>
                       )}
                       {isEditing && (
-                        <div className="mt-3 flex items-center gap-4">
-                          <label className="flex items-center gap-2">
-                            <span className="text-sm text-gray-600">Status:</span>
-                            <select
-                              value={currentObjective.status}
-                              onChange={(e) => setEditedObjective({ 
-                                ...currentObjective, 
-                                status: e.target.value as 'not-started' | 'in-progress' | 'completed' 
-                              })}
-                              className="px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
-                            >
-                              <option value="not-started">Not Started</option>
-                              <option value="in-progress">In Progress</option>
-                              <option value="completed">Completed</option>
-                            </select>
-                          </label>
-                          <label className="flex items-center gap-2">
-                            <span className="text-sm text-gray-600">Assignee:</span>
-                            <input
-                              type="text"
-                              value={currentObjective.assignee || ''}
-                              onChange={(e) => setEditedObjective({ ...currentObjective, assignee: e.target.value })}
-                              placeholder="Team member name"
-                              className="px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
-                            />
-                          </label>
+                        <div className="mt-3 space-y-3">
+                          <div className="flex items-center gap-4">
+                            <label className="flex items-center gap-2">
+                              <span className="text-sm text-gray-600">Status:</span>
+                              <select
+                                value={currentObjective.status}
+                                onChange={(e) => setEditedObjective({ 
+                                  ...currentObjective, 
+                                  status: e.target.value as 'not-started' | 'in-progress' | 'completed' 
+                                })}
+                                className="px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                              >
+                                <option value="not-started">Not Started</option>
+                                <option value="in-progress">In Progress</option>
+                                <option value="completed">Completed ✓</option>
+                              </select>
+                            </label>
+                            <label className="flex items-center gap-2">
+                              <span className="text-sm text-gray-600">Assignee:</span>
+                              <input
+                                type="text"
+                                value={currentObjective.assignee || ''}
+                                onChange={(e) => setEditedObjective({ ...currentObjective, assignee: e.target.value })}
+                                placeholder="Team member name"
+                                className="px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                              />
+                            </label>
+                          </div>
+                          <div>
+                            <label className="flex flex-col gap-1">
+                              <span className="text-sm text-gray-600">Comments/Notes:</span>
+                              <textarea
+                                value={currentObjective.comments || ''}
+                                onChange={(e) => setEditedObjective({ ...currentObjective, comments: e.target.value })}
+                                placeholder="Add any comments or notes here..."
+                                className="px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                rows={2}
+                              />
+                            </label>
+                          </div>
                         </div>
                       )}
-                      {!isEditing && objective.assignee && (
-                        <div className="mt-2 text-sm text-gray-500">
-                          Assigned to: <span className="font-medium">{objective.assignee}</span>
+                      {!isEditing && (
+                        <div className="mt-2 space-y-1">
+                          {objective.assignee && (
+                            <div className="text-sm text-gray-500">
+                              Assigned to: <span className="font-medium">{objective.assignee}</span>
+                            </div>
+                          )}
+                          {objective.comments && (
+                            <div className="text-sm bg-gray-50 p-2 rounded-lg border border-gray-200">
+                              <span className="font-medium text-gray-600">Comments:</span>
+                              <p className="text-gray-700 mt-1">{objective.comments}</p>
+                            </div>
+                          )}
                         </div>
                       )}
                     </div>
@@ -352,24 +399,39 @@ export default function HackathonPage() {
                               <X className="w-5 h-5" />
                             </button>
                           </>
-                        ) : (
-                          <>
-                            <button
-                              onClick={() => handleEdit(objective)}
-                              className="p-2 text-purple-600 hover:bg-purple-50 rounded-lg transition-colors"
-                              title="Edit"
-                            >
-                              <Edit2 className="w-5 h-5" />
-                            </button>
-                            <button
-                              onClick={() => handleDelete(objective.id)}
-                              className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                              title="Delete"
-                            >
-                              <Trash2 className="w-5 h-5" />
-                            </button>
-                          </>
-                        )}
+                            ) : (
+                              <>
+                                <button
+                                  onClick={() => handleToggleComplete(objective.id)}
+                                  className={`p-2 rounded-lg transition-colors ${
+                                    objective.status === 'completed' 
+                                      ? 'text-green-600 hover:bg-green-50' 
+                                      : 'text-gray-400 hover:bg-gray-50'
+                                  }`}
+                                  title={objective.status === 'completed' ? 'Mark as incomplete' : 'Mark as complete'}
+                                >
+                                  {objective.status === 'completed' ? (
+                                    <CheckCircle2 className="w-5 h-5" />
+                                  ) : (
+                                    <Circle className="w-5 h-5" />
+                                  )}
+                                </button>
+                                <button
+                                  onClick={() => handleEdit(objective)}
+                                  className="p-2 text-purple-600 hover:bg-purple-50 rounded-lg transition-colors"
+                                  title="Edit"
+                                >
+                                  <Edit2 className="w-5 h-5" />
+                                </button>
+                                <button
+                                  onClick={() => handleDelete(objective.id)}
+                                  className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                                  title="Delete"
+                                >
+                                  <Trash2 className="w-5 h-5" />
+                                </button>
+                              </>
+                            )}
                       </div>
                     )}
                   </div>
