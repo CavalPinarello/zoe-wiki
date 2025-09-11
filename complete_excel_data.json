@@ -1,0 +1,310 @@
+{
+  "Segment Overview": {
+    "headers": [
+      "Segment",
+      "Nickname",
+      "Age Range",
+      "Income/Net Worth",
+      "Current Health Spend",
+      "Market Size",
+      "Primary Motivation"
+    ],
+    "data": [
+      {
+        "Segment": "Longevity Seekers",
+        "Nickname": "Old and Rich",
+        "Age Range": "55-75",
+        "Income/Net Worth": "$5M-$500M+ net worth",
+        "Current Health Spend": "$85K-$300K/year",
+        "Market Size": "~500K globally",
+        "Primary Motivation": "Add 5-10 healthy years to life"
+      },
+      {
+        "Segment": "Optimizers",
+        "Nickname": "Young and Curious",
+        "Age Range": "35-55",
+        "Income/Net Worth": "\u20ac150K-\u20ac500K/year",
+        "Current Health Spend": "$2K-$5K/year",
+        "Market Size": "~10M globally",
+        "Primary Motivation": "Peak performance & energy"
+      },
+      {
+        "Segment": "Biohackers",
+        "Nickname": "Experimenters",
+        "Age Range": "25-45",
+        "Income/Net Worth": "$30K-$1M+/year",
+        "Current Health Spend": "$6K-$24K/year",
+        "Market Size": "~2M globally",
+        "Primary Motivation": "Cutting-edge optimization"
+      },
+      {
+        "Segment": "Sleep Sufferers",
+        "Nickname": "Problems",
+        "Age Range": "30-65",
+        "Income/Net Worth": "$40K-$150K/year",
+        "Current Health Spend": "$5K-$20K spent",
+        "Market Size": "~100M globally",
+        "Primary Motivation": "Just want to sleep normally"
+      }
+    ]
+  },
+  "Pain Points": {
+    "headers": [
+      "Segment",
+      "Primary Pain Points",
+      "Secondary Pain Points",
+      "Current Solutions",
+      "Why Solutions Fail"
+    ],
+    "data": [
+      {
+        "Segment": "Longevity Seekers",
+        "Primary Pain Points": "Mortality anxiety; Information overload; Lack of data integration; Trust issues; Time scarcity; Social isolation",
+        "Secondary Pain Points": "FOMO on breakthroughs; Legacy concerns; Quality vs quantity anxiety; Healthcare frustration",
+        "Current Solutions": "Longevity clinics ($50-200K/yr); Executive health programs; Multiple wearables ($5-15K); Blood panels ($10-30K/yr); NAD+/peptides ($20-50K/yr)",
+        "Why Solutions Fail": "Sleep overlooked; No data synthesis; Lacks personalization; Missing human touch; No peer comparison"
+      },
+      {
+        "Segment": "Optimizers",
+        "Primary Pain Points": "Performance anxiety; Work-life imbalance (60+ hrs/week); Parental guilt; Cognitive decline fears; Decision fatigue; Time poverty",
+        "Secondary Pain Points": "Career FOMO; Relationship strain; Impostor syndrome; Poor example for kids",
+        "Current Solutions": "Apple Watch/Oura ($500-2000); Meditation apps ($50-200/mo); ChatGPT; Gym; Supplements",
+        "Why Solutions Fail": "Too many unintegrated apps; Generic advice; No clear metrics; Missing social dimension; Lacks credibility"
+      },
+      {
+        "Segment": "Biohackers",
+        "Primary Pain Points": "Optimization obsession; Data addiction; Protocol FOMO; Credibility seeking; Integration complexity; Measurement limitations",
+        "Secondary Pain Points": "Partner understanding; Information overload; Financial strain; Side effect management",
+        "Current Solutions": "Multiple wearables ($2-10K); 15-30 supplements ($500-2000/mo); Nootropics/peptides; Red light/PEMF/cold plunge; Podcasts/forums",
+        "Why Solutions Fail": "No experimentation framework; Cannot attribute effects; Missing community validation; Lacks scientific rigor; No early access"
+      },
+      {
+        "Segment": "Sleep Sufferers",
+        "Primary Pain Points": "Chronic exhaustion (years/decades); Medical gaslighting; Financial burden; Relationship strain; Career impact; Identity crisis",
+        "Secondary Pain Points": "Medication dependency fears; Side effects; Insurance battles; Stigma and shame; Lost hope",
+        "Current Solutions": "Sleep studies; Multiple specialists ($5-20K); Prescription meds (Ambien, etc); CPAP (low compliance); Alternative treatments ($2-10K)",
+        "Why Solutions Fail": "Outdated 1990s protocols; Ignores whole person; One-size-fits-none; Long specialist waits; No ongoing support"
+      }
+    ]
+  },
+  "Solutions": {
+    "headers": [
+      "Segment",
+      "Core Solution",
+      "Key Features",
+      "Unique Differentiators",
+      "Support Model"
+    ],
+    "data": [
+      {
+        "Segment": "Longevity Seekers",
+        "Core Solution": "Dedicated sleep-for-healthspan service with high human touch and latest research",
+        "Key Features": "White-glove onboarding (2hr assessment); AI Sleep Longevity Engine; 50+ platform integrations; Dedicated specialist; Monthly video consults; 24/7 priority support; Quarterly in-person assessments; Anonymous peer benchmarking",
+        "Unique Differentiators": "Predictive healthspan modeling; Longevity clinic integration; Board-certified specialists; Biological age tracking; Direct researcher access",
+        "Support Model": "Concierge: Personal sleep historian; Dedicated specialist; Monthly video; 24/7 support"
+      },
+      {
+        "Segment": "Optimizers",
+        "Core Solution": "Dedicated sleep service with protocols, supplements, and latest findings",
+        "Key Features": "15-min smart onboarding; Calendar-aware AI coach; Energy forecasting; Family sync mode; Travel sleep shifting; Power nap optimization; Team challenges; 2-min daily education",
+        "Unique Differentiators": "Productivity correlation tracking; Automatic schedule adaptation; Partner/kids integration; ROI calculations; Quick-win protocols (5 min)",
+        "Support Model": "Self-service with AI: Smart coach; Group sessions; Community support; Expert AMAs"
+      },
+      {
+        "Segment": "Biohackers",
+        "Core Solution": "World's most advanced sleep experimentation platform",
+        "Key Features": "N=1 experiment designer; Statistical significance calculator; A/B testing framework; Full API access; Raw data downloads; Community leaderboards; Protocol wikis; Beta feature access",
+        "Unique Differentiators": "Placebo period management; Multi-variable experiments; ML pattern detection; Direct database queries; Genetic correlation analysis",
+        "Support Model": "Community-driven: Peer mentorship; Researcher access; Protocol sharing; Group experiments"
+      },
+      {
+        "Segment": "Sleep Sufferers",
+        "Core Solution": "Cutting-edge virtual sleep clinic with latest protocols and continuous care",
+        "Key Features": "360-degree assessment; Full CBT-I program; Weekly check-ins (first month); 24/7 crisis support; Peer support groups; Medication optimization; Mental health screening; Caregiver resources",
+        "Unique Differentiators": "Hope restoration focus; Small wins celebration; Licensed professionals; Insurance documentation; Provider portal for doctors",
+        "Support Model": "Comprehensive care: Sleep psychologist; Nurse practitioner; Daily coach; Peer groups; Crisis support"
+      }
+    ]
+  },
+  "Dashboards": {
+    "headers": [
+      "Segment",
+      "Dashboard Name",
+      "Primary Metrics",
+      "Key Visualizations",
+      "Personalization Features"
+    ],
+    "data": [
+      {
+        "Segment": "Longevity Seekers",
+        "Dashboard Name": "The Longevity Command Center",
+        "Primary Metrics": "Sleep Longevity Score (0-100); Projected Healthspan Impact; Biological Age Contribution; Sleep Efficiency %; REM/Deep Sleep %; Peer Percentile",
+        "Key Visualizations": "Executive Summary Panel; Biological Age Tracker; Healthspan Projection Graph; Optimization Opportunities; Peer Benchmarking; Research Alerts; Intervention Effectiveness",
+        "Personalization Features": "Customizable metrics; Research feed filtering; Alert thresholds; Peer group selection"
+      },
+      {
+        "Segment": "Optimizers",
+        "Dashboard Name": "The Performance Hub",
+        "Primary Metrics": "Daily Energy Forecast; Productivity Correlation; Sleep Debt; Recovery Rate; Consistency Score; Family Sync Status",
+        "Key Visualizations": "Energy Forecast Widget; Calendar Integration View; Power Nap Optimizer; Weekly Analytics; Smart Scheduling; Travel Protocol; Family Dashboard",
+        "Personalization Features": "Calendar sync priorities; Family member profiles; Work schedule adaptation; Goal setting"
+      },
+      {
+        "Segment": "Biohackers",
+        "Dashboard Name": "The Sleep Laboratory",
+        "Primary Metrics": "Active Experiments; P-values & Effect Sizes; Advanced Biomarkers; Community Ranking; Stack Efficiency; Discovery Alerts",
+        "Key Visualizations": "Experiment Control Center; A/B Test Manager; Statistical Analysis; Biomarker Heatmap; Stack Optimizer; Community Lab; Data Export Tools",
+        "Personalization Features": "Custom experiments; Metric creation; API webhooks; Data visualization options"
+      },
+      {
+        "Segment": "Sleep Sufferers",
+        "Dashboard Name": "The Recovery Center",
+        "Primary Metrics": "Sleep Quality Trend; Hours Slept; Medication Reduction; Morning Mood; Progress Milestones; Support Activity",
+        "Key Visualizations": "Hope Restoration Panel; Progress Celebrations; Care Team Hub; Crisis Support Button; Treatment Tracker; Peer Stories; Small Wins Feed",
+        "Personalization Features": "Milestone customization; Support preferences; Crisis protocols; Celebration settings"
+      }
+    ]
+  },
+  "Value & Pricing": {
+    "headers": [
+      "Segment",
+      "Primary Value Prop",
+      "Supporting Messages",
+      "Pricing Tier",
+      "Annual Discount",
+      "LTV Target"
+    ],
+    "data": [
+      {
+        "Segment": "Longevity Seekers",
+        "Primary Value Prop": "Add 5-10 healthy years to your life through optimized sleep",
+        "Supporting Messages": "Join the top 1% of sleep optimizers; Never miss a breakthrough; Personal sleep team 24/7; Bedroom longevity lab; Data-driven confidence",
+        "Pricing Tier": "$499/month",
+        "Annual Discount": "$4,999/year (17% off)",
+        "LTV Target": "$25,000 (4+ years)"
+      },
+      {
+        "Segment": "Optimizers",
+        "Primary Value Prop": "Gain 2 hours of peak performance daily through optimized sleep",
+        "Supporting Messages": "Be the parent and professional you want; Sleep smarter not longer; Join 10,000+ performers; Evidence-based for real life; Track ROI on sleep",
+        "Pricing Tier": "$99/month",
+        "Annual Discount": "$999/year (16% off)",
+        "LTV Target": "$3,000 (2.5 years)"
+      },
+      {
+        "Segment": "Biohackers",
+        "Primary Value Prop": "The world's most advanced sleep experimentation platform",
+        "Supporting Messages": "Test what works for YOUR biology; Leading edge of sleep science; Share with 10,000+ scientists; Tomorrow's breakthroughs today; Your data, your control",
+        "Pricing Tier": "$149/month",
+        "Annual Discount": "$1,499/year (16% off)",
+        "LTV Target": "$4,500 (2.5 years)"
+      },
+      {
+        "Segment": "Sleep Sufferers",
+        "Primary Value Prop": "Real help for real sleep problems, finally",
+        "Supporting Messages": "You're not broken, the system is; Affordable and effective; Care team that understands; Small steps to big change; Hope backed by science",
+        "Pricing Tier": "$29/month",
+        "Annual Discount": "$299/year (14% off)",
+        "LTV Target": "$1,000 (3 years)"
+      }
+    ]
+  },
+  "Implementation": {
+    "headers": [
+      "Phase",
+      "Timeline",
+      "Key Activities",
+      "Resources Needed",
+      "Success Criteria",
+      "Risk Mitigation"
+    ],
+    "data": [
+      {
+        "Phase": "Hackathon Day 1",
+        "Timeline": "9AM-5PM",
+        "Key Activities": "Validate segments with surveys; Prioritize first segment; Define MVP features; Design dashboards; Create user journeys; Develop pitch",
+        "Resources Needed": "4-6 team members; Survey tools; Design software; Pitch deck template",
+        "Success Criteria": "20+ survey responses; Segment consensus; MVP feature list; 3 dashboard mockups; Pitch deck v1",
+        "Risk Mitigation": "Have backup segment choice; Pre-prepare survey questions; Use existing templates"
+      },
+      {
+        "Phase": "MVP (Months 1-3)",
+        "Timeline": "Q1 2025",
+        "Key Activities": "Build multi-tenant architecture; Develop adaptive dashboard; Integrate 5 wearables; Launch Sleep Sufferers segment; Recruit 100 beta users",
+        "Resources Needed": "3 engineers; 1 designer; 1 sleep expert; $150K budget",
+        "Success Criteria": "Platform operational; 100 active beta users; 70% weekly retention; NPS > 40; 3 success stories",
+        "Risk Mitigation": "Start with manual concierge; Use existing APIs; Partner with wearables"
+      },
+      {
+        "Phase": "Growth (Months 4-9)",
+        "Timeline": "Q2-Q3 2025",
+        "Key Activities": "Launch Optimizer segment; Add AI personalization; Build community features; B2B partnerships; Scale to 1,000 users",
+        "Resources Needed": "5 engineers; 2 designers; 3 sleep experts; Sales team; $500K budget",
+        "Success Criteria": "1,000 paying users; $50K MRR; 2 segments live; 5 B2B partnerships; Series A ready",
+        "Risk Mitigation": "Focus on retention first; Test with small groups; Build waitlist"
+      },
+      {
+        "Phase": "Scale (Months 10-18)",
+        "Timeline": "Q4 2025-Q2 2026",
+        "Key Activities": "Launch all 4 segments; International expansion; Clinical validation; Insurance partnerships; Raise Series A",
+        "Resources Needed": "Full team of 25; Clinical advisors; Legal team; $2M budget",
+        "Success Criteria": "10,000 users; $500K MRR; Clinical validation; 3 insurance partners; $10M Series A",
+        "Risk Mitigation": "Stay in wellness initially; Partner with providers; HIPAA from day one"
+      }
+    ]
+  },
+  "Metrics": {
+    "headers": [
+      "Segment",
+      "CAC",
+      "Conversion Rate",
+      "Acquisition Channel",
+      "Daily Active %",
+      "Monthly Churn",
+      "NPS Target",
+      "Key Outcome Metric"
+    ],
+    "data": [
+      {
+        "Segment": "Longevity Seekers",
+        "CAC": "$500-$1000",
+        "Conversion Rate": "25%",
+        "Acquisition Channel": "Longevity clinics, referrals",
+        "Daily Active %": "85%",
+        "Monthly Churn": "2%",
+        "NPS Target": "70+",
+        "Key Outcome Metric": "Healthspan +15%, Bio age -2 years"
+      },
+      {
+        "Segment": "Optimizers",
+        "CAC": "$150-$300",
+        "Conversion Rate": "15%",
+        "Acquisition Channel": "Content marketing, SEO",
+        "Daily Active %": "70%",
+        "Monthly Churn": "4%",
+        "NPS Target": "50+",
+        "Key Outcome Metric": "Productivity +20%, Energy +25%"
+      },
+      {
+        "Segment": "Biohackers",
+        "CAC": "$100-$200",
+        "Conversion Rate": "20%",
+        "Acquisition Channel": "Communities, influencers",
+        "Daily Active %": "90%",
+        "Monthly Churn": "3%",
+        "NPS Target": "60+",
+        "Key Outcome Metric": "Experiments 10+, Stack optimization 30%"
+      },
+      {
+        "Segment": "Sleep Sufferers",
+        "CAC": "$50-$100",
+        "Conversion Rate": "10%",
+        "Acquisition Channel": "Medical referrals, insurance",
+        "Daily Active %": "95% weekly",
+        "Monthly Churn": "5%",
+        "NPS Target": "45+",
+        "Key Outcome Metric": "Sleep +2 hours, Medication -50%"
+      }
+    ]
+  }
+}

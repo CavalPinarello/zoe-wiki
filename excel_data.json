@@ -1,0 +1,121 @@
+{
+  "Segment Overview": [
+    {
+      "ZoE Hackathon - Customer Segment Analysis": "Segment"
+    },
+    {
+      "ZoE Hackathon - Customer Segment Analysis": "Longevity Seekers"
+    },
+    {
+      "ZoE Hackathon - Customer Segment Analysis": "Optimizers"
+    },
+    {
+      "ZoE Hackathon - Customer Segment Analysis": "Biohackers"
+    },
+    {
+      "ZoE Hackathon - Customer Segment Analysis": "Sleep Sufferers"
+    }
+  ],
+  "Pain Points": [
+    {
+      "Pain Points Analysis & Current Solutions": "Segment"
+    },
+    {
+      "Pain Points Analysis & Current Solutions": "Longevity Seekers"
+    },
+    {
+      "Pain Points Analysis & Current Solutions": "Optimizers"
+    },
+    {
+      "Pain Points Analysis & Current Solutions": "Biohackers"
+    },
+    {
+      "Pain Points Analysis & Current Solutions": "Sleep Sufferers"
+    }
+  ],
+  "Solutions": [
+    {
+      "ZoE Solutions Architecture": "Segment"
+    },
+    {
+      "ZoE Solutions Architecture": "Longevity Seekers"
+    },
+    {
+      "ZoE Solutions Architecture": "Optimizers"
+    },
+    {
+      "ZoE Solutions Architecture": "Biohackers"
+    },
+    {
+      "ZoE Solutions Architecture": "Sleep Sufferers"
+    }
+  ],
+  "Dashboards": [
+    {
+      "Dashboard Specifications & User Interface": "Segment"
+    },
+    {
+      "Dashboard Specifications & User Interface": "Longevity Seekers"
+    },
+    {
+      "Dashboard Specifications & User Interface": "Optimizers"
+    },
+    {
+      "Dashboard Specifications & User Interface": "Biohackers"
+    },
+    {
+      "Dashboard Specifications & User Interface": "Sleep Sufferers"
+    }
+  ],
+  "Value & Pricing": [
+    {
+      "Value Propositions & Pricing Strategy": "Segment"
+    },
+    {
+      "Value Propositions & Pricing Strategy": "Longevity Seekers"
+    },
+    {
+      "Value Propositions & Pricing Strategy": "Optimizers"
+    },
+    {
+      "Value Propositions & Pricing Strategy": "Biohackers"
+    },
+    {
+      "Value Propositions & Pricing Strategy": "Sleep Sufferers"
+    }
+  ],
+  "Implementation": [
+    {
+      "Implementation Roadmap": "Phase"
+    },
+    {
+      "Implementation Roadmap": "Hackathon Day 1"
+    },
+    {
+      "Implementation Roadmap": "MVP (Months 1-3)"
+    },
+    {
+      "Implementation Roadmap": "Growth (Months 4-9)"
+    },
+    {
+      "Implementation Roadmap": "Scale (Months 10-18)"
+    }
+  ],
+  "Metrics": [
+    {
+      "Success Metrics by Segment": "Segment"
+    },
+    {
+      "Success Metrics by Segment": "Longevity Seekers"
+    },
+    {
+      "Success Metrics by Segment": "Optimizers"
+    },
+    {
+      "Success Metrics by Segment": "Biohackers"
+    },
+    {
+      "Success Metrics by Segment": "Sleep Sufferers"
+    }
+  ]
+}
