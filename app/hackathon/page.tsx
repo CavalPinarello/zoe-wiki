@@ -702,4 +702,4 @@ export default function HackathonPage() {
       </div>
     </div>
   );
-}
+}// Force rebuild at Thu Sep 11 17:19:22 PDT 2025
