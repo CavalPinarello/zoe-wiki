@@ -68,28 +68,36 @@ const initialObjectives: HackathonObjective[] = [
     title: 'Implement Real-time Sleep Analytics',
     description: 'Build a real-time analytics engine that processes sleep data streams and provides instant insights on sleep quality, patterns, and recommendations.',
     priority: 'medium',
-    status: 'not-started'
+    status: 'not-started',
+    techStack: [],
+    successMetrics: []
   },
   {
     id: '4',
     title: 'Develop AI Sleep Coach MVP',
     description: 'Create an AI-powered sleep coaching system that provides personalized recommendations based on user data, habits, and goals.',
     priority: 'high',
-    status: 'not-started'
+    status: 'not-started',
+    techStack: [],
+    successMetrics: []
   },
   {
     id: '5',
     title: 'Design Wearable-Agnostic Data Pipeline',
     description: 'Build a robust data pipeline that can ingest, normalize, and process data from multiple wearable devices and health platforms.',
     priority: 'medium',
-    status: 'not-started'
+    status: 'not-started',
+    techStack: [],
+    successMetrics: []
   },
   {
     id: '6',
     title: 'Create Community Features',
     description: 'Implement social features for the Biohacker segment including forums, challenges, and data sharing capabilities.',
     priority: 'low',
-    status: 'not-started'
+    status: 'not-started',
+    techStack: [],
+    successMetrics: []
   }
 ];
 
@@ -116,8 +124,12 @@ export default function HackathonPage() {
       return;
     }
     setEditingId(objective.id);
-    setEditedObjective({ ...objective });
-  };
+    // Deep clone the objective to ensure arrays are properly copied
+    setEditedObjective({ 
+      ...objective,
+      techStack: [...(objective.techStack || [])],
+      successMetrics: [...(objective.successMetrics || [])]
+    });  };
 
   const handleSave = () => {
     if (editedObjective) {
@@ -175,7 +187,9 @@ export default function HackathonPage() {
       title: 'New Objective',
       description: 'Add description here',
       priority: 'medium',
-      status: 'not-started'
+      status: 'not-started',
+    techStack: [],
+    successMetrics: []
     };
     const updatedObjectives = [...objectives, newObjective];
     setObjectives(updatedObjectives);
@@ -702,4 +716,4 @@ export default function HackathonPage() {
       </div>
     </div>
   );
-}// Force rebuild at Thu Sep 11 17:19:22 PDT 2025
+}
