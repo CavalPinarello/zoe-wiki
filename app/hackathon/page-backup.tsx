@@ -31,37 +31,22 @@ interface HackathonObjective {
   status: 'not-started' | 'in-progress' | 'completed';
   assignee?: string;
   comments?: string;
-  targetSegment?: string;
-  painPointAddressed?: string;
-  techStack?: string[];
-  estimatedEffort?: string;
-  successMetrics?: string[];
 }
 
 const initialObjectives: HackathonObjective[] = [
   {
     id: '1',
-    title: 'Build iOS Sleep Data Integration Hub',
-    description: 'Create a unified iOS app that aggregates sleep data from Apple Health, Oura, Whoop, Eight Sleep, and other wearables to address data fragmentation pain points',
+    title: 'Build Lightweight iOS Mobile App',
+    description: 'Develop a native iOS application that seamlessly integrates with Apple Health to aggregate sleep data from various devices including Apple Watch, Oura Ring, and other compatible wearables.',
     priority: 'high',
-    status: 'not-started',
-    targetSegment: 'All Segments',
-    painPointAddressed: 'Lack of data integration, Multiple unintegrated apps',
-    techStack: ['Swift', 'SwiftUI', 'HealthKit', 'CoreData', 'CloudKit'],
-    estimatedEffort: 'Day 1: Architecture, Day 2: Implementation',
-    successMetrics: ['5+ device integrations', 'Real-time data sync', 'Unified sleep score']
+    status: 'not-started'
   },
   {
     id: '2',
-    title: 'Create Adaptive Dashboard Framework',
-    description: 'Build modular dashboard that adapts UI/UX based on customer segment (Command Center vs Recovery Center)',
+    title: 'Create Modular Dashboard Architecture',
+    description: 'Design and implement a scalable, modular dashboard system that adapts to the needs of different customer segments (Longevity Seekers, Optimizers, Biohackers, Sleep Sufferers).',
     priority: 'high',
-    status: 'not-started',
-    targetSegment: 'All Segments',
-    painPointAddressed: 'One-size-fits-none solutions, Lacks personalization',
-    techStack: ['React', 'Next.js', 'TypeScript', 'D3.js', 'Tailwind CSS'],
-    estimatedEffort: 'Day 1: Framework, Day 2: 2 segment implementations',
-    successMetrics: ['4 distinct dashboards', 'Personalization engine', 'Sub-2s load time']
+    status: 'not-started'
   },
   {
     id: '3',
@@ -377,91 +362,6 @@ export default function HackathonPage() {
                               />
                             </label>
                           </div>
-                          {/* Editable Tech Stack */}
-                          <div>
-                            <label className="flex flex-col gap-1">
-                              <span className="text-sm text-gray-600">Tech Stack:</span>
-                              <div className="space-y-2">
-                                {(currentObjective.techStack || []).map((tech: string, i: number) => (
-                                  <div key={i} className="flex items-center gap-2">
-                                    <input
-                                      type="text"
-                                      value={tech}
-                                      onChange={(e) => {
-                                        const newStack = [...(currentObjective.techStack || [])];
-                                        newStack[i] = e.target.value;
-                                        setEditedObjective({ ...currentObjective, techStack: newStack });
-                                      }}
-                                      className="flex-1 px-2 py-1 text-sm border rounded focus:outline-none focus:ring-1 focus:ring-purple-500"
-                                    />
-                                    <button
-                                      onClick={() => {
-                                        const newStack = (currentObjective.techStack || []).filter((_: string, idx: number) => idx !== i);
-                                        setEditedObjective({ ...currentObjective, techStack: newStack });
-                                      }}
-                                      className="text-red-500 hover:text-red-700"
-                                      type="button"
-                                    >
-                                      <X className="w-4 h-4" />
-                                    </button>
-                                  </div>
-                                ))}
-                                <button
-                                  onClick={() => {
-                                    const newStack = [...(currentObjective.techStack || []), 'New Technology'];
-                                    setEditedObjective({ ...currentObjective, techStack: newStack });
-                                  }}
-                                  className="text-sm text-purple-600 hover:text-purple-700"
-                                  type="button"
-                                >
-                                  + Add technology
-                                </button>
-                              </div>
-                            </label>
-                          </div>
-                          {/* Editable Success Metrics */}
-                          <div>
-                            <label className="flex flex-col gap-1">
-                              <span className="text-sm text-gray-600">Success Metrics:</span>
-                              <div className="space-y-2">
-                                {(currentObjective.successMetrics || []).map((metric: string, i: number) => (
-                                  <div key={i} className="flex items-center gap-2">
-                                    <Target className="w-4 h-4 text-green-500" />
-                                    <input
-                                      type="text"
-                                      value={metric}
-                                      onChange={(e) => {
-                                        const newMetrics = [...(currentObjective.successMetrics || [])];
-                                        newMetrics[i] = e.target.value;
-                                        setEditedObjective({ ...currentObjective, successMetrics: newMetrics });
-                                      }}
-                                      className="flex-1 px-2 py-1 text-sm border rounded focus:outline-none focus:ring-1 focus:ring-purple-500"
-                                    />
-                                    <button
-                                      onClick={() => {
-                                        const newMetrics = (currentObjective.successMetrics || []).filter((_: string, idx: number) => idx !== i);
-                                        setEditedObjective({ ...currentObjective, successMetrics: newMetrics });
-                                      }}
-                                      className="text-red-500 hover:text-red-700"
-                                      type="button"
-                                    >
-                                      <X className="w-4 h-4" />
-                                    </button>
-                                  </div>
-                                ))}
-                                <button
-                                  onClick={() => {
-                                    const newMetrics = [...(currentObjective.successMetrics || []), 'New metric'];
-                                    setEditedObjective({ ...currentObjective, successMetrics: newMetrics });
-                                  }}
-                                  className="text-sm text-green-600 hover:text-green-700"
-                                  type="button"
-                                >
-                                  + Add success metric
-                                </button>
-                              </div>
-                            </label>
-                          </div>
                         </div>
                       )}
                       {!isEditing && (
@@ -475,33 +375,6 @@ export default function HackathonPage() {
                             <div className="text-sm bg-gray-50 p-2 rounded-lg border border-gray-200">
                               <span className="font-medium text-gray-600">Comments:</span>
                               <p className="text-gray-700 mt-1">{objective.comments}</p>
-                            </div>
-                          )}
-                          {/* Tech Stack Section */}
-                          {(objective.techStack && objective.techStack.length > 0) && (
-                            <div className="mt-3">
-                              <h5 className="text-sm font-medium text-gray-600 mb-2">Tech Stack:</h5>
-                              <div className="flex flex-wrap gap-2">
-                                {objective.techStack.map((tech, i) => (
-                                  <span key={i} className="px-2 py-1 bg-purple-100 text-purple-700 rounded-md text-xs">
-                                    {tech}
-                                  </span>
-                                ))}
-                              </div>
-                            </div>
-                          )}
-                          {/* Success Metrics */}
-                          {(objective.successMetrics && objective.successMetrics.length > 0) && (
-                            <div className="mt-3">
-                              <h5 className="text-sm font-medium text-gray-600 mb-2">Success Metrics:</h5>
-                              <ul className="space-y-1">
-                                {objective.successMetrics.map((metric, i) => (
-                                  <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
-                                    <Target className="w-3 h-3 text-green-500 mt-0.5" />
-                                    {metric}
-                                  </li>
-                                ))}
-                              </ul>
                             </div>
                           )}
                         </div>
